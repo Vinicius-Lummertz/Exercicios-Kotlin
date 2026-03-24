@@ -53,7 +53,7 @@ fun AppNavigation() {
 
         composable("pista1") {
             PistaScreen(
-                texto = "Tenho chaves mas não abro portas. O que sou?",
+                texto = "Tenho eletricidade no corpo e sou o mascote mais famoso do mundo Pokémon. Quem sou?",
                 onNext = { navController.navigate("pista2") },
                 onBack = { navController.popBackStack() }
             )
@@ -61,7 +61,7 @@ fun AppNavigation() {
 
         composable("pista2") {
             PistaScreen(
-                texto = "Quanto é 2 + 2?",
+                texto = "Sou um Pokémon de fogo que começa pequeno e termina como um poderoso dragão, mesmo não sendo do tipo dragão no início. Quem sou?",
                 onNext = { navController.navigate("pista3") },
                 onBack = { navController.popBackStack() }
             )
@@ -69,7 +69,7 @@ fun AppNavigation() {
 
         composable("pista3") {
             PistaScreen(
-                texto = "Sou redondo e ilumino a noite. Quem sou?",
+                texto = "Sou conhecido por dormir o tempo todo e bloquear caminhos. Quem sou?",
                 onNext = { navController.navigate("tesouro") },
                 onBack = { navController.popBackStack() }
             )
@@ -141,7 +141,7 @@ fun TreasureScreen(onRestart: () -> Unit) {
                 .padding(paddingValues)
                 .padding(16.dp)
         ) {
-            Text("🎉 Parabéns! Você encontrou o tesouro!")
+            Text("🎉 Parabéns! Você encontrou o tesouro! Você mostrou que é um verdadeiro mestre Pokémon!")
 
             Button(onClick = onRestart) {
                 Text("Voltar para Home")
